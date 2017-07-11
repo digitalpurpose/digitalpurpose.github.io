@@ -1,1 +1,462 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital Purpose</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="">
+    <meta name="author" content="Themelize.me">
+    
+    <!-- Bootstrap 4.0.0-alpha.6 CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    
+    <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+    
+    <!-- Theme style -->
+    <link href="assets/css/theme-style.min.css" rel="stylesheet">
+    
+    <!--Your custom colour override-->
+    <link href="#" id="colour-scheme" rel="stylesheet">
+    
+    <!-- Your custom override -->
+    <link href="assets/css/custom-style.css" rel="stylesheet">
+    
+    
+    
+    <!-- Optional: ICON SETS -->
+    <!-- Iconset: Font Awesome 4.7.0 via CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+    <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Iconset: ionicons - http://ionicons.com/ -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <!-- Iconset: Linearicons - https://linearicons.com/free -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+    
+    
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+    <link rel="shortcut icon" href="assets/assets/img/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/assets/img/icons/114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/assets/img/icons/72x72.png">
+    <link rel="apple-touch-icon" href="assets/assets/img/icons/default.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+  </head>
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-onepager header-compact-sticky page-index-onepager-bg-slideshow navbar-layout-default">
+    
+    <!-- @plugin: page loading indicator, delete to remove loader -->
+    <div class="page-loader" data-toggle="page-loader"></div>
+    
+    <a href="#content" id="top" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #header ======== -->
+    <div id="header">
+      
+      <div data-toggle="sticky">
+
+        <!--Header & Branding region-->
+        <div class="header">
+          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .flex-first or/and .flex-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+          <div class="header-inner container">
+            <!--branding/logo -->
+            <div class="header-brand flex-first">
+              <a class="header-brand-text" href="#" title="Home">
+                <h1>
+                  <span>Digital </span>Purpose<span></span>
+                </h1>
+              </a>
+            </div>
+            <!-- other header content -->
+            <div class="header-block flex-lg-last">
+
+              <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu - data-toggle="overlay" = Overlay Menu -->
+              <a href="#top" class="btn btn-link btn-icon header-btn float-right hidden-lg-up" data-toggle="collapse" data-target=".navbar-main" data-direction="right"> <i class="fa fa-bars"></i> </a>
+            </div>
+            
+            <div class="navbar navbar-toggleable-md navbar-toggleable-collapse">
+              <!--everything within this div is collapsed on mobile-->
+              <div class="navbar-main collapse">
+                <!--main navigation-->
+                <ul class="nav navbar-nav navbar-nav-onepager dropdown-effect-fade">
+                  <li class="nav-item">
+                    <a href="#top" data-toggle="scroll-link" class="nav-link"> <i class="fa fa-home nav-link-icon"></i> <span class="hidden-xs-up">Home</span> </a>
+                  </li>
+                  
+                  <li class="nav-item"><a href="#about" data-toggle="scroll-link" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="#team" data-toggle="scroll-link" class="nav-link">Team</a></li>
+                  <li class="nav-item"><a href="#work" data-toggle="scroll-link" class="nav-link">Work</a></li>
+                  <li class="nav-item"><a href="#contact" data-toggle="scroll-link" class="nav-link">Contact</a></li>
+                </ul>
+              </div>
+              <!--/.navbar-collapse -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #highlighted ======== -->
+    <div id="highlighted">
+      <!-- Image Banner: Use the the data-bg-img functionality to create a simple image banner Use spacer classes to make the banner larger with padding, allows for easy responsive changes too see: elements-ctas.htm To make the banner full height add the attributes: data-toggle="full-height" data-offset="#header" -->
+      <div class="bg-white overlay overlay-primary overlay-op-7 text-center px-3 py-5 py-lg-10 flex-valign"
+data-toggle="backstretch"
+data-backstretch-target="self"
+data-backstretch-overlay=false data-backstretch-imgs="assets/img/backgrounds/man-with-open-arms-saluting-the-nature-picjumbo-com.jpg,assets/img/backgrounds/ysvazfxdz_8-alvaro-serrano.jpg,assets/img/backgrounds/zfg9gz7ylcu-dalibor-bosnjakovic.jpg">
+        <h2 class="display-4 text-white" data-animate="fadeIn" data-animate-delay="0.2">
+          Digital solutions for social change
+        </h2>
+        <h3 class="text-grey font-weight-normal" data-animate="fadeIn" data-animate-delay="0.35">
+
+        </h3>
+        <hr class="hr-inverse hr-lg w-20 mx-auto my-4" data-animate="fadeIn" data-animate-delay="0.45" />
+        <div> <a href="#about" class="btn btn-inverse btn-rounded btn-lg py-lg-3 px-lg-5" data-toggle="scroll-link" data-animate="fadeIn" data-animate-delay="0.55">Find Out More</a>
+</div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #content ======== -->
+    <div id="content" class="p-0">
+      <!-- About -->
+      <div id="about" class="py-3 pt-lg-6 pb-lg-0">
+        <div class="container">
+
+          <div data-animate="fadeIn" data-animate-duration="0.8">
+            <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+            <h2 class="text-center text-uppercase font-weight-bold my-0">
+              Welcome to <span class="text-shadow">Digital Purpose</span>
+            </h2>
+            <hr class="mb-5 w-50 mx-auto" />
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-12" data-animate="fadeIn" data-animate-delay="0.4" data-animate-offset="100%">
+              <p class="lead">We make digital solutions for social change.</p>
+              <p>
+                We build premium software solutions for organisations, charities and start-ups working towards a better, fairer and more inclusive world for everyone. From donation platforms and educational games, through to corporate giving and outreach programs – we bring enterprise development skills and expertise to the community and social impact sector.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <!-- Why AppStrap -->
+        <div class="bg-inverse mt-3 mt-lg-6">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-5 divider-diagonal divider-diagonal-r divider-inverse" data-bg-img="assets/img/backgrounds/computer-screens.jpg" data-animate="fadeIn" data-animate-delay="0.1"></div>
+              <div class="col-lg-4 py-5" data-animate="fadeIn" data-animate-delay="0.3">
+                <hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-primary" />
+                <h2 class="display-5 text-slab text-white text-uppercase mt-0 mb-5">
+                  YOU DREAM IT,<br><span class="text-primary font-weight-bold">WE BUILD IT</span>
+                </h2>
+                <div class="row mb-3">
+                  <div class="col-12 col-md-11 text-grey">
+                    <p>
+                      The solutions to some of our greatest social challenges, from global warming through to social equality and justice for all, aren’t going to be found in a computer lab. At the same time, those with the knowledge and ideas of what needs doing, often lack technical skills. We bridge the gap, providing a team of technical professionals who know how to build systems and who are committed to using their skills for social change.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-0" />
+        <div class="bg-faded py-3 py-lg-6 overlay overlay-white overlay-op-9" data-bg-img="https://picjumbo.imgix.net/HNCK2530.jpg?q=40&w=3000&sharp=40" data-css='{"background-attachment": "fixed"}'>
+          <div class="container">
+
+            <div data-animate="fadeIn" data-animate-duration="0.8">
+              <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+              <h2 class="text-center text-uppercase font-weight-bold my-0">
+                User-focused design
+              </h2>
+              <hr class="mb-5 w-50 mx-auto" />
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                No matter what system you’re building, the key to success is putting the user first. In the social impact sector this is more true than ever – the users are your supporters, your clients and your reason for being. We focus on building clean, stream-lined systems that are intuitive to use and engaging. We don't just build software to be 'used', we build it to be enjoyed.
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hiring MDR block -->
+      <div class="p-3 text-center text-lg-left bg-inverse text-white overlay overlay-primary overlay-op-9" data-animate="fadeIn" data-bg-img="assets/img/backgrounds/zfg9gz7ylcu-dalibor-bosnjakovic.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-12 py-2">
+              <h3 class="font-weight-bold mt-0 mb-2">
+                No compromise on quality
+              </h3>
+              <div>
+                We believe that the social impact sector deserves the same quality and professionalism that the corporate sector receives. Our most important social challenges need our best people working on them. Our team of software developers has years of experience building enterprise-grade solutions, that are secure, robust and effective.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div id="team" class="container py-4 py-lg-6">
+        <div data-animate="fadeIn" data-animate-duration="0.6">
+          <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+          <h2 class="text-center text-uppercase font-weight-bold my-0">
+            Meet the team
+          </h2>
+          <hr class="mb-5 w-50 mx-auto" />
+        </div>
+
+        <div class="team team-list mt-4">
+
+          <!--Team Member jimi-->
+          <div class="team-member">
+            <div class="row">
+              <div class="col-sm-10">
+                <h4 class="name">
+                  <a>Daniel Zwolenski</a>
+                </h4>
+                <p class="role">Founder &amp; CEO</p>
+                <p>Daniel has over two decades of experience designing and developing systems for a range of companies. From driving the delivery of <a href="http://coinland.com.au">Coinland</a>, a CBA initiative to deliver financial literacy to kids, through to the <a href="http://www.schools.nsw.edu.au/learning/7-12assessments/smart/">NSW Education&#8217;s NAPLAN reporting system</a>, and <a href="http://www.fundingcentre.com.au/">OurCommunity&#8217;s Funding Centre</a>, Daniel has a knack for pulling together teams and driving projects to successful delivery.</p>
+                <p>In 2014, Daniel was awarded a <a href="http://myerfoundation.org.au/grants/other-programs/mif/2014-myer-innovation-fellows/">Fellowship for Innovation from the Myer Foundation</a>, which led to the formation of Digital Purpose, an initiative to bring much needed enterprise-grade development skills to the community and social impact sector.</p>
+                <p>When not building software, Daniel gets involved with boots-on-ground projects. He has worked with bears in the Andes, snow leopards in Kyrgyzstan, and crocodiles in northern Australia. In 2009, Daniel helped create the <a href="http://natgeotv.com.au/tv/extinction-sucks/">Extinction Sucks TV series</a>, shown on Nat Geo Wild.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-10">
+                <h4 class="name">
+                  <a>Josephine Thatcher</a>
+                </h4>
+                <p class="role">Senior Partner</p>
+                <p>Jo is all about making sure systems get delivered on time and to budget. A rare mix of technical talent and people skills has seen Jo take the lead on numerous large projects with organisations such as Tourism Australia and British Airways, as well as a number of smaller start-ups and innovative businesses. Jo has spent more time than she&#8217;d like to think about managing stake-holders, coordinating development teams and making sure everyone is working towards the same goals.</p>              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-10">
+                <h4 class="name">
+                  <a>Martina Kainberger</a>
+                </h4>
+                <p class="role">Senior Partner</p>
+                <p>Martina likes things neat and organised, especially when it comes to software. A commitment to great software architecture and a keen attention to detail ensures the delivery of the highest quality software systems. Martina has run innovative, high-profile projects at corporates such as News Corp, government organisations such as Tourism Australia and the NSW Education Department, and a range of small, dynamic startups.</p>              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Customer testimonial-->
+      <div id="work" class="p-3 py-lg-6 bg-inverse">
+        <div class="container">
+          <div data-animate="fadeIn" data-animate-duration="0.6">
+            <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+            <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
+              Our Work
+            </h2>
+            <hr class="mb-5 w-50 mx-auto" />
+          </div>
+          <div class="text-grey">
+
+              <p>We pride ourselves on delivering solutions that not only work well, but that users find intuitive and engaging. We work with you to understand your goals and convert these into systems that people actually enjoy using. Our goal is to make the hard things look easy.</p>
+              <p>We have some of the best technologists in the business working with us. We specialise in making systems no one has thought of before, bringing innovative solutions to life. Whether you&#8217;re a brand new start-up with a great app idea, a corporate wanting to vamp up your social engagement, or a government organisation wanting tools to amplify your impact, we have the people and the experience to make it happen.</p>
+              <p><strong>Custom software solutions</strong></p>
+              <p>From online fundraising platforms to software for outreach campaigns, and corporate giving platforms &#8211; we can build your online system, forms and databases. We use the same trusted technology and tools that the corporate world uses, because why compromise? Our team has experience delivering mutli-million dollar solutions for financial institutions, large government organisations, through to schools and medical organisations.</p>
+              <p><strong>Mobile apps</strong></p>
+              <p>We build mobile apps of all shapes and sizes &#8211; from Android to iOS and everything in between. We can help you navigate the best technology choices, and make sure you end up with an app experience that makes the impact you need.</p>
+              <p><strong>Innovation and social start-ups   </strong></p>
+              <p>Got your lean canvas filled in, worked out your Key Value Proposition, but not sure how to deliver the tech to make it happen? Talk to us &#8211; we love working with start-ups that have a truly unique idea for social impact. We&#8217;ll work with you to keep things lean, determine your MVP and help you build the minimal you need to get traction and test your idea at market.</p>
+              <p><strong>Technology consulting and advice</strong></p>
+              <p>We recognise that not everyone needs a full service solution and a dedicated high-end team. Sometimes you just just need a little help to get you on your way. We offer consulting services and advice to meet your needs. We&#8217;ll review your tech strategy, help you put together your own team, or review outsourcing options. Our mission is to see more social impact through technology, we&#8217;ll work with you to make that happen.</p>
+              <p>Get in touch to find out more</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Contact form -->
+      <div id="contact">
+        <div class="container p-4 py-lg-5">
+          <div data-animate="fadeIn" data-animate-duration="0.6">
+            <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+            <h2 class="text-center text-uppercase font-weight-bold my-0">
+              Contact Us
+            </h2>
+            <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+              Make contact about your next project
+            </h5>
+            <hr class="mb-5 w-50 mx-auto" />
+          </div>
+          <div class="row" data-animate="fadeIn" data-animate-delay="0.1">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <form id="contact-form" action="mailto:info@digitalputpose.com.au" role="form">
+                <div class="form-group" data-animate="fadeInDown" data-animate-delay="0.2">
+                  <label class="sr-only" for="contact-name">Name</label>
+                  <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                </div>
+                <div class="form-group" data-animate="fadeInDown" data-animate-delay="0.3">
+                  <label class="sr-only" for="contact-email">Email</label>
+                  <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                </div>
+                <div class="form-group" data-animate="fadeInDown" data-animate-delay="0.4">
+                  <label class="sr-only" for="contact-message">Message</label>
+                  <textarea rows="5" class="form-control" id="contact-message" placeholder="Message"></textarea>
+                </div>
+                <input type="button" class="btn btn-outline-primary btn-lg" value="Send Message">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #footer ======== -->
+    <footer id="footer" class="py-3">
+      <div class="container">
+        <div class="row">
+          <!--@todo: replace with company copyright details-->
+          <div class="col-md-6">
+            <p class="mb-0 text-sm">Copyright 2017 &copy; Digital Purpose</p>
+          </div>
+          <div class="col-md-6 flex-valign">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Hidden elements - excluded from jPanel Menu on mobile-->
+    <div class="hidden-elements jpanel-menu-exclude">
+      <!--@modal - signup modal-->
+      <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Sign Up
+              </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form action="signup.htm">
+                <div class="form-group">
+                  <h5>
+                    Price Plan
+                  </h5>
+                  <select class="form-control">
+                    <option>Basic</option>
+                    <option>Pro</option>
+                    <option>Pro +</option>
+                  </select>
+                </div>
+                <hr />
+                
+                <h5>
+                  Account Information
+                </h5>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-first-name">First Name</label>
+                  <input type="text" class="form-control" id="signup-first-name" placeholder="First name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-last-name">Last Name</label>
+                  <input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-username">Userame</label>
+                  <input type="text" class="form-control" id="signup-username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-email">Email address</label>
+                  <input type="email" class="form-control" id="signup-email" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="signup-password">Password</label>
+                  <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" value="term" class="form-check-input">
+                    I agree with the Terms and Conditions. 
+                  </label>
+                </div>
+                <hr />
+                <button class="btn btn-primary" type="submit">Sign up</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <small>Already signed up? <a href="login.htm">Login here</a>.</small>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      
+      <!--@modal - login modal-->
+      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Login
+              </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form action="login.htm">
+                <div class="form-group">
+                  <label class="sr-only" for="login-email">Email</label>
+                  <input type="email" id="login-email" class="form-control email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="login-password">Password</label>
+                  <input type="password" id="login-password" class="form-control password" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <small>Not a member? <a href="#" class="signup">Sign up now!</a></small>
+              <br />
+              <small><a href="#">Forgotten password?</a></small>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </div>
+    
+    
+    <!--jQuery 3.2.1 via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Tether 1.1.1 via CDN, needed for Bootstrap Tooltips & Popovers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+    
+    <!-- Bootstrap 4.0.0-alpha.6 JS via CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    
+    
+    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+    
+    <!--Custom scripts & AppStrap API integration -->
+    <script src="assets/js/custom-script.js"></script>
+    <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>
